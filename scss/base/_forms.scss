@@ -86,6 +86,19 @@ $field-container: 26rem !default;
 	&[type='number'] {
 		padding-right: 0.25em;
 	}
+
+	&:focus-visible {
+		outline: 4px dashed $pm-primary;
+	}
+	&:-moz-focusring {
+	  outline: 4px dashed $pm-primary;
+	}
+	/*
+	Does not work
+	&:focus:not(:-moz-focusring) {
+	  outline: 0;
+	}*/
+
 }
 
 @if $rtl-option==true {
