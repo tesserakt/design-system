@@ -82,6 +82,6 @@
 	}
 
 	&.is-thin {
-		@include meterbar-size(0.375em);
+		@include meterbar-size(em(3));
 	}
 }
